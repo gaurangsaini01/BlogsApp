@@ -5,7 +5,7 @@ import { useContext } from "react";
 
 function Blogs() {
   const { posts, loading } = useContext(AppContext);
-  return <div className="text-md md:w-[650px] w-11/12 ">
+  return <div className="text-md flex flex-col items-center  md:w-[650px] w-11/12 ">
     {loading ? (<Spinner></Spinner>) : 
   (
     posts.length === 0 ? <div>No posts Found</div> : posts.map((post)=>{
