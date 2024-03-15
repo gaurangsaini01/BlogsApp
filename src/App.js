@@ -11,7 +11,7 @@ function App() {
     fetchData();
   },[])
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center w-[100vw] h-100vh text-xs sm:text-base'>
       <Header></Header>
       <Blogs></Blogs>
       <Pagination/>

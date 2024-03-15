@@ -16,10 +16,10 @@ export default function AppContextProvider({children}){
         try{
             const response = await axios.get(url);
             const data = response.data;
+            console.log(data)
             setPage(data.page);
             setPosts(data.posts)
-            setTotalPages(data.totalPages)
-            
+            setTotalPages(data.totalPages)    
         }
         catch(error){
             console.log(error);
